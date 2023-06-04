@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".RaportFragment">
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp">
+
+
+        <EditText
+            android:id="@+id/textRaport"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/raport_hint"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/round_plain"/>
+
+        <Button
+            android:id="@+id/raport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="0"
+            android:background="@drawable/round_button"
+            android:text="@string/raports"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:paddingTop="8dp"/>
+    </LinearLayout>
+</layout>

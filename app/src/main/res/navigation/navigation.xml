@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.identyfikator.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.identyfikator.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_raportFragment"
+            app:destination="@id/raportFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_idCardFragment"
+            app:destination="@id/idCardFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/idCardFragment"
+        android:name="com.example.identyfikator.IdCardFragment"
+        android:label="fragment_id_card"
+        tools:layout="@layout/fragment_id_card" >
+        <action
+            android:id="@+id/action_idCardFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/raportFragment"
+        android:name="com.example.identyfikator.RaportFragment"
+        android:label="fragment_raport"
+        tools:layout="@layout/fragment_raport" >
+        <action
+            android:id="@+id/action_raportFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

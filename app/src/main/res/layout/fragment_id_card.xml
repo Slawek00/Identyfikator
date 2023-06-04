@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".IdCardFragment">
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp">
+
+
+        <ImageView
+            android:id="@+id/qr_id"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+</layout>
