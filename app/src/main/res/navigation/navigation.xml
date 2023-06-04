@@ -26,7 +26,8 @@
             app:destination="@id/idCardFragment" />
         <argument
             android:name="userName"
-            app:argType="string" />
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/idCardFragment"

@@ -1,7 +1,7 @@
 //instalacja jetpack navigation
 buildscript {
     ext {
-        kotlin_version = '1.9.0-Beta'
+        kotlin_version = '1.7.1'
     }
     repositories {
         google()

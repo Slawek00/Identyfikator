@@ -21,8 +21,8 @@ class MainFragment : Fragment() {
             inflater, R.layout.fragment_main, container, false
         )
 
-        val args = MainFragmentArgs.fromBundle(requireArguments())
-        binding.user.text = args.userName
+        //val args = MainFragmentArgs.fromBundle(requireArguments())
+        //binding.user.text = args.userName
 
 
         binding.qr.setOnClickListener {
