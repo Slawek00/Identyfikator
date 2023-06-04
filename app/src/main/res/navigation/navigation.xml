@@ -25,9 +25,11 @@
             android:id="@+id/action_mainFragment_to_idCardFragment"
             app:destination="@id/idCardFragment" />
         <argument
-            android:name="userName"
-            app:argType="string"
-            app:nullable="true" />
+            android:name="data"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/idCardFragment"
@@ -37,6 +39,9 @@
         <action
             android:id="@+id/action_idCardFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <argument
+            android:name="data"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/raportFragment"
@@ -46,5 +51,8 @@
         <action
             android:id="@+id/action_raportFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <argument
+            android:name="data"
+            app:argType="string" />
     </fragment>
 </navigation>

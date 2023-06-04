@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_orange">#b37400</color>
     <color name="orange">#FFA500</color>
+    <color name="red_error">#E50000</color>
 </resources>

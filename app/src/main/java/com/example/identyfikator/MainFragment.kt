@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.identyfikator.databinding.FragmentMainBinding
+import org.json.JSONObject
 
 
 class MainFragment : Fragment() {
@@ -21,16 +22,23 @@ class MainFragment : Fragment() {
             inflater, R.layout.fragment_main, container, false
         )
 
-        //val args = MainFragmentArgs.fromBundle(requireArguments())
-        //binding.user.text = args.userName
+        val args = MainFragmentArgs.fromBundle(requireArguments())
+        val name = args.data?.let { dataUnpack(it) }
+        binding.user.text = "Witaj ${name}!"
 
 
         binding.qr.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_idCardFragment)
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToIdCardFragment(data = args.data))
         }
         binding.raport.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_raportFragment)
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToRaportFragment(data = args.data))
         }
         return binding.root
+    }
+
+    fun dataUnpack(data: String): String{
+        val jsonObject = JSONObject(data)
+        val name = jsonObject.getString("First_name")
+        return name
     }
 }
