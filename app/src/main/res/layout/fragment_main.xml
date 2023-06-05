@@ -32,7 +32,8 @@
             android:background="@drawable/round_button"
             android:gravity="center_horizontal"
             android:text="@string/card_id"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:paddingTop="8dp"/>
 
         <Button
             android:id="@+id/raport"
