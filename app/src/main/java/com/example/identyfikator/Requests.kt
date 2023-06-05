@@ -21,7 +21,7 @@ class Requests {
         lateinit var serverResponse: String
         val postBody= jsonObject.toString()
         val request = Request.Builder()
-            .url("http://192.168.1.3:5000/mobile_app_api")
+            .url("Server API IP")
             .post(postBody.toRequestBody(MEDIA_TYPE_MARKDOWN))
             .build()
 
@@ -42,7 +42,7 @@ class Requests {
         lateinit var serverResponse: String
         val postBody= jsonObject.toString()
         val request = Request.Builder()
-            .url("http://192.168.1.3:5000/errors")
+            .url("Server API IP")
             .post(postBody.toRequestBody(MEDIA_TYPE_MARKDOWN))
             .build()
 

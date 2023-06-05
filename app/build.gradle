@@ -10,6 +10,7 @@ android {
     compileSdk 33
     buildToolsVersion '30.0.3'
 
+
     defaultConfig {
         applicationId "com.example.identyfikator"
         minSdk 29
@@ -61,6 +62,8 @@ dependencies {
     implementation "androidx.navigation:navigation-compose:$nav_version"
 
     //instalacja bibliotek do komunikacji z aplikacją we flasku
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

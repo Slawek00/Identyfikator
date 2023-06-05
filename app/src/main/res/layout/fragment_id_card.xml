@@ -17,7 +17,6 @@
         <ImageView
             android:id="@+id/qrID"
             android:layout_width="match_parent"
-            android:layout_height="540dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_height="540dp" />
     </LinearLayout>
 </layout>
