@@ -38,7 +38,7 @@ class IdCardFragment : Fragment() {
 
     private fun dataUnpack(data: String): String{
         val jsonObject = JSONObject(data)
-        val url = jsonObject.getString("QR_code")
+        val url = jsonObject.getString("url_QR")
         return url
     }
 

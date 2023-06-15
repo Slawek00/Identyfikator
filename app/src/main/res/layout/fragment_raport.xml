@@ -14,7 +14,7 @@
 
 
         <EditText
-            android:id="@+id/textRaport"
+            android:id="@+id/textReport"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="0"
@@ -28,7 +28,7 @@
             android:background="@drawable/round_plain"/>
 
         <Button
-            android:id="@+id/raport"
+            android:id="@+id/report"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"

@@ -21,11 +21,11 @@ class RaportFragment : Fragment() {
         val binding: FragmentRaportBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_raport, container, false
         )
-        val text = binding.textRaport.text.toString()
         val args = RaportFragmentArgs.fromBundle(requireArguments())
         lateinit var response: String
 
-        binding.raport.setOnClickListener {
+        binding.report.setOnClickListener {
+            val text = binding.textReport.text.toString()
             runBlocking(Dispatchers.IO){
                 val requests = Requests()
                 response = requests.sendRaport(text)

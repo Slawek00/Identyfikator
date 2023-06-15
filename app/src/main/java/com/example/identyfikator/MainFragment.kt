@@ -38,7 +38,7 @@ class MainFragment : Fragment() {
 
     fun dataUnpack(data: String): String{
         val jsonObject = JSONObject(data)
-        val name = jsonObject.getString("First_name")
+        val name = jsonObject.getString("Imie")
         return name
     }
 }

@@ -21,7 +21,7 @@ class Requests {
         lateinit var serverResponse: String
         val postBody= jsonObject.toString()
         val request = Request.Builder()
-            .url("Server API IP")
+            .url("http://slawek00.pythonanywhere.com/mobile_app_api")
             .post(postBody.toRequestBody(MEDIA_TYPE_MARKDOWN))
             .build()
 
@@ -36,13 +36,13 @@ class Requests {
     fun sendRaport(raport: String):String{
         val jsonObject = JSONObject()
         jsonObject.apply {
-            put("Raport", raport)
+            put("Report", raport)
         }
 
         lateinit var serverResponse: String
         val postBody= jsonObject.toString()
         val request = Request.Builder()
-            .url("Server API IP")
+            .url("http://slawek00.pythonanywhere.com/errors")
             .post(postBody.toRequestBody(MEDIA_TYPE_MARKDOWN))
             .build()
 
